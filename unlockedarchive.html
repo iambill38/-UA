@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bill.com</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/474x/53/a4/07/53a40704f8a1ae13c649a1ad208d3193.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #ccc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .navbar {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar a:hover {
+            color: #000000;
+        }
+        .content {
+            padding: 20px 0;
+            flex: 1;
+        }
+        .footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .video-container {
+            text-align: center;
+        }
+        .form-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #ccc;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #666;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>WELCOME TO UNLOCKED ARCHIVE &#153</h1>
+    </div>
+    <div class="navbar">
+        <a href="https://www.instagram.com/iambill38/">BILLS VISION</a>
+        <a href="https://za.pinterest.com/Iambill38/">PINTEREST</a>
+        <a href="https://www.tiktok.com/@tadsvision">TADS VISION</a>
+        <a href="videoexpo.html">VIDEO EXPO </a>
+    </div>
+    <div class="content">
+        <br>
+        <div class="video-container">
+            <video width="640" height="360" controls autoplay muted loop>
+                <source src="C:\Users\User\OneDrive\Desktop\PROPS\unlocked rottation 20001-0250.mkv" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="form-container">
+            <input type="text" id="inputText" placeholder="Enter your text here">
+            <button onclick="swapCase()">Swap Case</button>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function swapCase() {
+        const inputText = document.getElementById('inputText').value;
+        let swappedText = '';
+        for (let i = 0; i < inputText.length; i++) {
+            const char = inputText[i];
+            if (char === char.toUpperCase()) {
+                swappedText += char.toLowerCase();
+            } else {
+                swappedText += char.toUpperCase();
+            }
+        }
+        document.getElementById('result').textContent = swappedText;
+    }
+</script>
+</body>
+</html>
