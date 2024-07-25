@@ -88,7 +88,7 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
     </style>
-    @media all  (max-width: 1231px) { }
+   
 </head>
 <body>
 <div class="container">
@@ -117,20 +117,6 @@
     </div>
 </div>
 
-<script>
-    function swapCase() {
-        const inputText = document.getElementById('inputText').value;
-        let swappedText = '';
-        for (let i = 0; i < inputText.length; i++) {
-            const char = inputText[i];
-            if (char === char.toUpperCase()) {
-                swappedText += char.toLowerCase();
-            } else {
-                swappedText += char.toUpperCase();
-            }
-        }
-        document.getElementById('result').textContent = swappedText;
-    }
-</script>
+
 </body>
 </html>
